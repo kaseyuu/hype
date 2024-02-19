@@ -28,7 +28,7 @@ const HeaderOne = ({ btnStyle, HeaderSTyle }) => {
                     <div className="row align-items-center row--0">
                         <div className="col-lg-3 col-md-6 col-4">
                             <Logo
-                                image={`${process.env.PUBLIC_URL}/hype/hypelogo.png`}
+                                image={`${process.env.PUBLIC_URL}/hype/hype1.png`}
                             />
                         </div>
                         <div className="col-lg-9 col-md-6 col-8 position-static">

@@ -1,16 +1,16 @@
 import React from 'react';
-import { FiActivity, FiCast, FiMap } from "react-icons/fi";
+import { FiFile, FiBookOpen, FiCast, FiUsers } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import ScrollAnimation from "react-animate-on-scroll";
 
 const ServiceList = [
     {
-        icon: <FiActivity />,
+        icon: <FiFile />,
         title: 'TAX ADVISORY & COMPLIANCE',
         description: 'We strive to provide assistance and solutions that go beyond the traditional tax and accounting role.'
     },
     {
-        icon: <FiActivity />,
+        icon: <FiBookOpen />,
         title: 'ACCOUNTING & BOOKKEEPING',
         description: 'Our accounting and bookkeeping services is focused on helping you to keep a close eye on costs and carefully manage cash flow.'
     },
@@ -20,7 +20,7 @@ const ServiceList = [
         description: 'We work with our clients for addressing their complex business issues in order to deliver best outcomes and long-lasting results.'
     },
     {
-        icon: <FiMap />,
+        icon: <FiUsers />,
         title: 'PAYROLL',
         description: 'Should I combine it with business advisory part?'
     },

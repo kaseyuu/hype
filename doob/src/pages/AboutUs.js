@@ -5,11 +5,6 @@ import HeaderOne from '../common/header/HeaderOne';
 import FooterFour from '../common/footer/FooterFour';
 import BrandThree from '../elements/brand/BrandThree';
 import AboutFour from '../elements/about/AboutFour';
-import ServiceOne from "../elements/service/ServiceOne";
-import SectionTitle from "../elements/sectionTitle/SectionTitle";
-import CounterUpFour from "../elements/counterup/CounterUpFour";
-import TeamFour from "../elements/team/TeamFour";
-import TimelineTwo from "../elements/timeline/TimelineTwo";
 import Separator from "../elements/separator/Separator";
 
 const AboutUs = () => {
@@ -89,27 +84,6 @@ const AboutUs = () => {
                 <Separator />
 
                 <AboutFour image="./images/about/contact-image.jpg" />
-
-                <Separator />
-
-                {/* Start Elements Area  */}
-                <div className="rwt-team-area rn-section-gap">
-                    <div className="container">
-                        <div className="row mb--20">
-                            <div className="col-lg-12">
-                                <SectionTitle
-                                    textAlign="text-center"
-                                    radiusRounded=""
-                                    subtitle="Our Corporate Team."
-                                    title="Corporate Team Member."
-                                    description=""
-                                />
-                            </div>
-                        </div>
-                        <TeamFour column="col-lg-6 col-xl-3 col-md-6 col-12 mt--30" teamStyle="team-style-three" />
-                    </div>
-                </div>
-                {/* End Elements Area  */}
 
                 <FooterFour />
             </main>
