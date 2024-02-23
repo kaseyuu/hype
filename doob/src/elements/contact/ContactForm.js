@@ -14,7 +14,7 @@ function ContactForm({ props, formStyle }) {
         e.preventDefault();
         emailjs
             .sendForm(
-                'service_eror91g',
+                'service_kyligvp',
                 'template_f1v2z9t',
                 e.target,
                 'oBxDtP3ZiRDhQt5ZY'

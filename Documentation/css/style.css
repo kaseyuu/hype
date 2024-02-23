@@ -4642,10 +4642,10 @@ button:focus {
 
 .contact_form .form-group .form-control,
 .contact_form .form-group textarea {
-  border: 1px solid #f4f8f8;
+  border: 1px solid #f1f5f4;
   height: 58px;
   border-radius: 4px;
-  background-color: white;
+  background-color: #f1f5f4;
   box-shadow: 0 4px 10px 0 rgba(4, 73, 89, 0.08);
   color: #878b99;
   font-weight: 400;
