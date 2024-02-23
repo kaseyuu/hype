@@ -1,6 +1,5 @@
 import React from 'react';
 import ContactForm from "./ContactForm";
-import GoogleMapStyle from "./GoogleMapStyle";
 import { FiHeadphones, FiMail, FiMapPin } from "react-icons/fi";
 
 const ContactOne = () => {
@@ -57,7 +56,8 @@ const ContactOne = () => {
                     <ContactForm formStyle="contact-form-1" />
                 </div>
                 <div className="col-lg-5 mt_md--30 mt_sm--30">
-                    <GoogleMapStyle />
+                    <img src="./hype/contact1.jpg" alt="" />
+
                 </div>
             </div>
         </>
