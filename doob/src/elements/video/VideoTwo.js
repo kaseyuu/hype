@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import FsLightbox from "fslightbox-react";
-import { FiPlay, FiZoomIn , FiFolderPlus} from "react-icons/fi";
+import { FiPlay, FiZoomIn, FiFolderPlus } from "react-icons/fi";
 
-function VideoTwo({galleryItem , imagename}) {
+function VideoTwo({ galleryItem, imagename }) {
     const { popupLink } = galleryItem;
     const iconHandel = () => {
         if (popupLink) {
@@ -11,9 +11,9 @@ function VideoTwo({galleryItem , imagename}) {
                     return <FiFolderPlus />;
                 }
                 return <FiFolderPlus />;
-              } else if (popupLink.toString().match(/youtube/g)) {
+            } else if (popupLink.toString().match(/youtube/g)) {
                 return <FiPlay />;
-              } else {
+            } else {
                 return <FiZoomIn />;
             }
         }
@@ -27,17 +27,14 @@ function VideoTwo({galleryItem , imagename}) {
             <div className="video-popup icon-center">
                 <div className="overlay-content">
                     <div className="thumbnail">
-                        <img className="radius-small" src={`${imagename}`} alt="Corporate Image" />
-                    </div>
-                    <div className="video-icon">
-                        <button className="btn-default rounded-player" onClick={ () => setToggler(!toggler) }><span>{iconHandel()}</span></button>
+                        <img className="radius-small" src="./hype/home3.png" alt="Corporate Image" />
                     </div>
                 </div>
             </div>
             <div className="video-lightbox-wrapper">
-                <FsLightbox 
-                toggler={ toggler } 
-                sources={popupLink} />
+                <FsLightbox
+                    toggler={toggler}
+                    sources={popupLink} />
             </div>
         </>
     )
