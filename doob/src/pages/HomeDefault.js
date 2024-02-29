@@ -13,20 +13,25 @@ import TestimonialThree from "../elements/testimonial/TestimonialThree";
 import CalltoActionFive from "../elements/calltoaction/CalltoActionFive";
 import BlogList from "../components/blog/itemProp/BlogList";
 import BlogClassicData from '../data/blog/BlogList.json';
+
+import Slider from 'react-slick';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+
 var BlogListData = BlogClassicData.slice(0, 3);
 
 
-const PopupData = [
-    {
-        id: "01",
-        image: "./images/bg/bg-image-4.jpg",
-        popupLink: [
-            'https://www.youtube.com/watch?v=ctsT5Y-InqE&ab_channel=Rainbow-Themes',
-        ],
-    }
-]
-
 const HomeDefault = () => {
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+    };
 
     return (
         <>
@@ -36,21 +41,30 @@ const HomeDefault = () => {
                 <HeaderOne btnStyle="btn-small round btn-icon" HeaderSTyle="header-transparent" />
 
                 {/* Start Slider Area  */}
-                <div className="slider-area slider-style-1 variation-default height-850 bg_image" data-black-overlay="7" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/images/bg/bg-image-3.jpg)` }}>
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-lg-12">
-                                <div className="inner text-center">
-                                    <span className="subtitle">ROLLING PHOTOS TO BE ADDED</span>
-                                    <h1 className="title display-one">Unique Business <span>Consulting</span>.</h1>
-                                    <p className="description">We help our clients succeed by blabla. Is it better to add a contact us button here?</p>
-                                    <div className="button-group">
-                                        <Link className="btn-default btn-medium btn-border round btn-icon" to="#">Book an appointment <i className="icon"><FiArrowRight /></i></Link>
+                <div className="slider-area slider-style-1 variation-default height-850" data-black-overlay="7">
+                    <Slider {...settings}>
+                        {/* Slide 1 */}
+                        <div>
+                            <div className="bg_image" style={{ backgroundImage: `url(./hype/home2.jpg)` }}>
+                                {/* Static Content */}
+                                <div className="container">
+                                    <div className="row">
+                                        <div className="col-lg-12">
+                                            <div className="inner text-center">
+                                                <h1 className="title display-one">Unique Business <span>Consulting</span></h1>
+                                                <p className="description">We help our clients succeed by blabla. Is it better to add a contact us button here?</p>
+                                                <div className="button-group">
+                                                    <Link className="btn-default btn-medium btn-border round btn-icon" to="#">Book an appointment <i className="icon"><FiArrowRight /></i></Link>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                        {/* Slide 2 */}
+
+                    </Slider>
                 </div>
                 {/* End Slider Area  */}
 
