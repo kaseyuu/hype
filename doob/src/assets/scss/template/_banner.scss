@@ -283,7 +283,8 @@
 
     &.variation-default {
         .inner {
-            padding-top: 80px;
+            padding-top: 300px;
+            padding-bottom:300px;
         }
     }
 
@@ -505,7 +506,8 @@
 // Slider Style 4 
 .slider-style-4 {
     .inner {
-        padding-top: 80px;
+        padding-top: 300px;
+        padding-bottom:300px;
 
         @media #{$sm-layout} {
             padding-top: 50px;

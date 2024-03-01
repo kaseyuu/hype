@@ -41,7 +41,7 @@ const HomeDefault = () => {
                 <HeaderOne btnStyle="btn-small round btn-icon" HeaderSTyle="header-transparent" />
 
                 {/* Start Slider Area  */}
-                <div className="slider-area slider-style-1 variation-default height-850" data-black-overlay="7">
+                <div className="slider-area slider-style-1 variation-default" data-black-overlay="7">
                     <Slider {...settings}>
                         {/* Slide 1 */}
                         <div>
@@ -62,7 +62,26 @@ const HomeDefault = () => {
                                 </div>
                             </div>
                         </div>
+
                         {/* Slide 2 */}
+                        <div>
+                            <div className="bg_image" style={{ backgroundImage: `url(./hype/home3.jpg)` }}>
+                                <div className="container">
+                                    <div className="row">
+                                        <div className="col-lg-12">
+                                            <div className="inner text-center">
+                                                <h1 className="title display-one">Unique Business <span>Consulting</span></h1>
+                                                <p className="description">We help our clients succeed by blabla. Is it better to add a contact us button here?</p>
+                                                <div className="button-group">
+                                                    <Link className="btn-default btn-medium btn-border round btn-icon" to="#">Book an appointment <i className="icon"><FiArrowRight /></i></Link>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                {/* Repeated Static Content or Modified as needed */}
+                            </div>
+                        </div>
 
                     </Slider>
                 </div>
